@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil | Shoxrux Admin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style_profil.css" />
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div>
+      <h2>⚡ Admin Panel</h2>
+      <nav>
+        <a href="dashboard.html" class="active"><i class="fa fa-home"></i> Asosiy</a>
+        <a href="profil.html"><i class="fa fa-user"></i> Profil</a>
+        <a href="portfolio.html"><i class="fa fa-briefcase"></i> Portfolio</a>
+        <a href="#"><i class="fa fa-file"></i> Xizmatlar</a>
+        <a href="#"><i class="fa fa-cog"></i> Sozlamalar</a>
+      </nav>
+    </div>
+    <div class="logout">
+      <a href="#" class="btn"><i class="fa fa-sign-out-alt"></i> Chiqish</a>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+    <div class="form-card">
+      <h1>👤 Google Profil Ma’lumotlari</h1>
+
+      <div class="profile-avatar">
+        <img src="https://i.pravatar.cc/150?img=12" alt="Profil rasmi">
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label>Ism Familiya</label>
+          <input type="text" value="Shoxrux Xudoynazarov" readonly>
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" value="shoxrux@gmail.com" readonly>
+        </div>
+
+        <div class="form-group">
+          <label>Telefon raqam</label>
+          <input type="text" value="+998901234567" readonly>
+        </div>
+
+        <div class="form-group">
+          <label>Tug‘ilgan sana</label>
+          <input type="date" value="1996-08-17" readonly>
+        </div>
+
+        <div class="form-group">
+          <label>Manzil</label>
+          <input type="text" value="Toshkent, O‘zbekiston" readonly>
+        </div>
+
+        <div class="form-group">
+          <label>Tashkilot</label>
+          <input type="text" value="UzPay LLC" readonly>
+        </div>
+
+        <div class="form-group">
+          <label>Til (locale)</label>
+          <input type="text" value="uz" readonly>
+        </div>
+
+        <div class="form-group">
+          <label>Jins</label>
+          <input type="text" value="Erkak" readonly>
+        </div>
+
+        <div class="form-group">
+          <label>Lavozim</label>
+          <input type="text" placeholder="Masalan: Full Stack Developer">
+        </div>
+
+        <div class="form-group" style="grid-column: span 3;">
+          <label>Bio / Tavsif</label>
+          <textarea rows="4" placeholder="O‘zingiz haqingizda qisqacha yozing..."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">💾 Saqlash</button>
+          <button type="button" class="btn btn-secondary">Bekor qilish</button>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

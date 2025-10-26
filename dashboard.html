@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Shoxrux</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style_dashboard.css" />
+ 
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div>
+      <h2>⚡ Admin Panel</h2>
+      <nav>
+        <a href="dashboard.html" class="active"><i class="fa fa-home"></i> Asosiy</a>
+        <a href="profil.html"><i class="fa fa-user"></i> Profil</a>
+        <a href="portfolio.html"><i class="fa fa-briefcase"></i> Portfolio</a>
+        <a href="#"><i class="fa fa-file"></i> Xizmatlar</a>
+        <a href="#"><i class="fa fa-cog"></i> Sozlamalar</a>
+      </nav>
+    </div>
+    <div class="logout">
+      <a href="#" class="btn"><i class="fa fa-sign-out-alt"></i> Chiqish</a>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <!-- TABLE SECTION -->
+    <section>
+      <h1>Contact bo'limi</h1>
+      <table id="messageTable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nomi</th>
+            <th>Tavsif</th>
+            <th>Sana</th>
+            <th>Amallar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Jadval ma'lumotlari (ko‘paytirib yozish mumkin) -->
+          <tr><td>1</td><td>Web Platforma</td><td>Elektron imzo va hujjat almashish tizimi</td><td>2025-10-18</td><td><a href="#" class="btn">✏️ Edit</a> <a href="#" class="btn btn-danger">🗑 Delete</a></td></tr>
+          <tr><td>2</td><td>AI Asosli Analiz</td><td>Huquqiy hujjatlar tahlil platformasi</td><td>2025-10-15</td><td><a href="#" class="btn">✏️ Edit</a> <a href="#" class="btn btn-danger">🗑 Delete</a></td></tr>
+          <tr><td>3</td><td>CRM Tizimi</td><td>Mijozlarni boshqarish platformasi</td><td>2025-10-12</td><td><a href="#" class="btn">✏️ Edit</a> <a href="#" class="btn btn-danger">🗑 Delete</a></td></tr>
+          <tr><td>4</td><td>Portfolio</td><td>Shaxsiy loyiha taqdimot sayti</td><td>2025-10-10</td><td><a href="#" class="btn">✏️ Edit</a> <a href="#" class="btn btn-danger">🗑 Delete</a></td></tr>
+          <tr><td>5</td><td>ChatBot</td><td>Telegram orqali xizmat ko‘rsatish tizimi</td><td>2025-10-09</td><td><a href="#" class="btn">✏️ Edit</a> <a href="#" class="btn btn-danger">🗑 Delete</a></td></tr>
+          <tr><td>6</td><td>AI Generator</td><td>Matndan rasm yaratish tizimi</td><td>2025-10-07</td><td><a href="#" class="btn">✏️ Edit</a> <a href="#" class="btn btn-danger">🗑 Delete</a></td></tr>
+          <tr><td>7</td><td>Online To‘lov</td><td>Click va Payme integratsiyasi</td><td>2025-10-06</td><td><a href="#" class="btn">✏️ Edit</a> <a href="#" class="btn btn-danger">🗑 Delete</a></td></tr>
+          <tr><td>8</td><td>UzPay</td><td>AI asosida to‘lov platformasi</td><td>2025-10-05</td><td><a href="#" class="btn">✏️ Edit</a> <a href="#" class="btn btn-danger">🗑 Delete</a></td></tr>
+          <tr><td>9</td><td>Smart Home</td><td>Telegram asosidagi avtomatika tizimi</td><td>2025-10-03</td><td><a href="#" class="btn">✏️ Edit</a> <a href="#" class="btn btn-danger">🗑 Delete</a></td></tr>
+          <tr><td>10</td><td>LexAI</td><td>Huquqiy hujjatlarni AI tahlil qiluvchi tizim</td><td>2025-10-02</td><td><a href="#" class="btn">✏️ Edit</a> <a href="#" class="btn btn-danger">🗑 Delete</a></td></tr>
+          <tr><td>11</td><td>AI Scoring</td><td>Kredit reyting tizimi</td><td>2025-10-01</td><td><a href="#" class="btn">✏️ Edit</a> <a href="#" class="btn btn-danger">🗑 Delete</a></td></tr>
+          <tr><td>12</td><td>AI OCR</td><td>Pasportni avtomatik o‘qish tizimi</td><td>2025-09-28</td><td><a href="#" class="btn">✏️ Edit</a> <a href="#" class="btn btn-danger">🗑 Delete</a></td></tr>
+        </tbody>
+      </table>
+
+      <!-- PAGINATION BUTTONS -->
+      <div class="pagination">
+        <button id="prevBtn" class="btn">⬅ Orqaga</button>
+        <span id="pageInfo"></span>
+        <button id="nextBtn" class="btn">Oldinga ➡</button>
+      </div>
+    </section>
+
+ <h1>Dashboard</h1>
+
+    <div class="cards">
+      <div class="card">
+        <h3><i class="fa fa-user-circle"></i> Profil Ma’lumotlari</h3>
+        <p>Profilingizni yangilash, shaxsiy ma’lumotlarni tahrirlash va xavfsizlik sozlamalarini boshqarish.</p>
+        <a href="#" class="btn">Tahrirlash</a>
+      </div>
+
+      <div class="card">
+        <h3><i class="fa fa-briefcase"></i> Portfolio</h3>
+        <p>Sizning faol loyihalaringiz va xizmatlaringizni kuzatib boring, yangilarini qo‘shing yoki tahrirlang.</p>
+        <a href="#" class="btn">Ko‘rish</a>
+      </div>
+
+      <div class="card">
+        <h3><i class="fa fa-file"></i> Xizmatlar</h3>
+        <p>Yaratilgan va imzolangan hujjatlarni boshqaring. Fayllarni onlayn tarzda yuklab oling.</p>
+        <a href="#" class="btn">Ko‘rish</a>
+      </div>
+    </div>
+  </main>
+
+    <script>
+      const rowsPerPage = 10;
+      const table = document.querySelector("#messageTable tbody");
+      const rows = table.querySelectorAll("tr");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      const pageInfo = document.getElementById("pageInfo");
+      let currentPage = 1;
+
+      function showPage(page) {
+        const start = (page - 1) * rowsPerPage;
+        const end = start + rowsPerPage;
+
+        rows.forEach((row, index) => {
+          row.style.display = index >= start && index < end ? "" : "none";
+        });
+
+        pageInfo.textContent = `Sahifa ${page} / ${Math.ceil(rows.length / rowsPerPage)}`;
+        prevBtn.disabled = page === 1;
+        nextBtn.disabled = page === Math.ceil(rows.length / rowsPerPage);
+      }
+
+      prevBtn.addEventListener("click", () => {
+        if (currentPage > 1) {
+          currentPage--;
+          showPage(currentPage);
+        }
+      });
+
+      nextBtn.addEventListener("click", () => {
+        if (currentPage < Math.ceil(rows.length / rowsPerPage)) {
+          currentPage++;
+          showPage(currentPage);
+        }
+      });
+
+      // Boshlang‘ich sahifa
+      showPage(currentPage);
+    </script>
+</body>
+</html>

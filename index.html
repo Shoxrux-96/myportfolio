@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shoxrux Dev | Neo Dark Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 
 </head>
 <body>
@@ -21,12 +21,21 @@
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
+
+    <div class="nav-actions">
+      <select class="lang-select">
+        <option value="uz" selected>🇺🇿 O‘zbek</option>
+        <option value="ru">🇷🇺 Русский</option>
+        <option value="en">🇬🇧 English</option>
+      </select>
+      <button class="btn-login"><a href="login.html">🔑 Login</a></button>
+    </div>
   </header>
 
   <section id="home">
     <h2>Salom, men Shoxrux</h2>
     <p>Full Stack Dasturchi | Django & React Developer</p>
-    <a href="files/shoxrux_cv.pdf" class="btn"><i class="fa fa-download"></i> CV Yuklab olish</a>
+    <a href="files/resume.pdf" class="btn"><i class="fa fa-download"></i> CV Yuklab olish</a>
   </section>
   
  <section id="about">
@@ -40,7 +49,7 @@
       </div>
       <h3 style="color:#00ff7f; margin-top:10px;">Shoxrux Xudoynazarov</h3>
       <p style="color:#00ff7f;">Full Stack Developer</p>
-      <a href="files/shoxrux_cv.pdf" class="btn"><i class="fa fa-download"></i> Download CV</a>
+      <a href="files/resume.pdf" class="btn"><i class="fa fa-download"></i> Download CV</a>
     </div>
 
     <!-- Card 2: About Me -->
@@ -214,7 +223,7 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script src="particles-config.js"></script>
+<script src="./js/particles-config.js"></script>
 
 </body>
 </html>

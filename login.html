@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Neo Dark Globe + Login</title>
+
+  <!-- particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="./css/style_login.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div id="particles-js"></div>
+
+    <div class="content">
+      <div class="globe-wrap" aria-hidden="true">
+        <canvas id="globeCanvas"></canvas>
+      </div>
+
+      <div class="panel" role="region" aria-label="Login form">
+        <h2><i class="fa fa-lock"></i>&nbsp;Admin Kirish</h2>
+
+        <form>
+          <label for="user">Login</label>
+          <input id="user" type="text" placeholder="admin@example.uz" />
+
+          <label for="pass">Parol</label>
+          <input id="pass" type="password" placeholder="********" />
+ 
+          <button class="btn" type="submit"><i class="fa fa-sign-in-alt"></i>&nbsp; Kirish</button>
+      
+          <div class="or">yoki</div>
+
+          <button type="button" class="btn-google"><i class="fab fa-google"></i>&nbsp; Google orqali kirish</button>
+
+          <div class="credits">© 2025 Shoxrux Dev</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS: particles + globe drawing -->
+  <script src="./js/globus.js"></script>
+
+</body>
+</html>
